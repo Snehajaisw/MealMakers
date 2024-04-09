@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+    <body><br>
+        <div class="container">
+          <div class="login-box">
+            <div class="row">
+                <div class="col-md-6 login-left">
+                  <center>  <h2>Login Portal</h2> </center>
+                    <form action="PHP/validation.php" method="post">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" class="form-control" required>
+                             </div><br>
+                             <div class="form-group">
+                                 <label>Password</label>
+                                 <input type="password" name="password" class="form-control" required>
+                            </div><br>
+                                <center>  <button type="submit" class="btn btn-primary">login</button> </center><br>
+                                  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't have an account yet?<a href="signup.html" id="sign-up-link">&nbsp;Sign Up</a>&nbsp;&nbsp;here</em>
+                                  <div class="error-msg"><?= $msg ?></div>
+                         </form>
+                    </div>
+               </div>
+         </div>
+     </div>
+    
+    </body>
+    </head>
+    </html>
